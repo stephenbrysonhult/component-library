@@ -1,0 +1,12 @@
+@import '../assets/scss/variable';
+
+.button {
+  padding: $unit;
+  background: $color-primary;
+  color: $color-secondary;
+  font-family: "circular-medium";
+
+  // &__label {
+  //   margin-right: $md;
+  // }
+}

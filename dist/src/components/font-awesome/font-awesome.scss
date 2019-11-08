@@ -1,0 +1,22 @@
+@import './scss/fontawesome.scss';
+@import './scss/solid.scss';
+@import './scss/regular.scss';
+@import './scss/light.scss';
+
+.fas{
+  @extend .fas;
+}
+.far{
+  @extend .far;
+}
+.fal{
+  @extend .fal;
+}
+
+.fa-check {
+  @extend %fa-icon;
+
+  &:before {
+    content: fa-content($fa-var-check);
+  }
+}
