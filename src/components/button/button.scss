@@ -1,12 +1,51 @@
-@import '../assets/scss/variable';
+@import '../../assets/scss/variable';
+@import '../../assets/scss/mixin';
 
 .button {
-  padding: $unit;
-  background: $color-primary;
-  color: $color-secondary;
-  font-family: "circular-medium";
+  $this: '.button';
+  padding: #{$unit * 1.5} #{$unit * 2};
+  background: $color-dark-1;
+  border-radius: #{$unit * .5};
+  cursor: pointer;
+  @include flex;
+  @include flex-align-items(center);
+  @include flex-justify-content(center);
 
-  // &__label {
-  //   margin-right: $md;
-  // }
+  &__label {
+    & + #{$this}__icon{
+      color: $color-light-1;
+      margin-left: #{$unit};
+    }
+  }
+
+  // Variants
+  &--secondary{
+    background: transparent;
+    border: #{$unit * .2} solid $color-secondary;
+
+    #{$this}__label{
+      color: $color-secondary;
+
+      & + #{$this}__icon{
+        color: $color-secondary;
+      }
+    }
+  }
+  &--cta{
+    background: $color-secondary;
+
+    #{$this}__label{
+      color: $color-light-1;
+
+      & + #{$this}__icon{
+        color: $color-light-1;
+      }
+    }
+  }
+
+  // States
+  &--disabled{
+    cursor: not-allowed;
+    opacity: .5;
+  }
 }

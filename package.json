@@ -1,10 +1,8 @@
 {
-  "name": "component-library",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@hult.steve/component-library",
+  "version": "1.0.4",
+  "private": false,
   "dependencies": {
-    "@bit/hult.careermapper.assets": "^0.0.1",
-    "@bit/hult.careermapper.font-awesome": "^0.0.2",
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
@@ -30,12 +28,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "bit": {
-    "env": {
-      "compiler": "bit.envs/compilers/react@1.0.4"
-    },
-    "componentsDefaultDirectory": "components/{name}",
-    "packageManager": "npm"
   }
 }

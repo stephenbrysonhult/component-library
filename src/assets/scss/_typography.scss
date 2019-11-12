@@ -1,0 +1,128 @@
+// Imports
+@import '../../assets/scss/variable';
+@import '../../assets/scss/mixin';
+
+// font faces
+@font-face {
+  font-family: "circular-black";
+  src: url("../fonts/EFCircularWeb-Black.woff") format("woff2"),
+    url("../fonts/EFCircularWeb-Black.woff") format("woff");
+}
+@font-face {
+  font-family: "circular-bold";
+  src: url("../fonts/EFCircularWeb-Bold.woff") format("woff2"),
+    url("../fonts/EFCircularWeb-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "circular-medium";
+  src: url("../fonts/EFCircularWeb-Medium.woff") format("woff2"),
+    url("../fonts/EFCircularWeb-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "circular-book";
+  src: url("../fonts/EFCircularWeb-Book.woff") format("woff2"),
+    url("../fonts/EFCircularWeb-Book.woff") format("woff");
+}
+
+// Mixins
+@mixin font-span($value: dark){
+  font-family: $font-family-medium;
+  font-size: 14px;
+  @if $value == dark {
+    color: $color-dark-1;
+  }
+  @else if $value == light {
+    color: $color-light-1;
+  }
+  @include media($tablet){
+    font-size: 12px;
+  }
+}
+@mixin font-body($value: dark){
+  font-family: $font-family-book;
+  font-size: 16px;
+  margin: #{$unit * 2} 0;
+  @if $value == dark {
+    color: $color-black-60;
+  }
+  @else if $value == light {
+    color: $color-white-60;
+  }
+  @include media($tablet){
+    font-size: 14px;
+    margin: #{$unit} 0;
+  }
+}
+@mixin font-body-bold($value: dark){
+  font-family: $font-family-bold;
+  font-size: 16px;
+  @if $value == dark {
+    color: $color-dark-1;
+  }
+  @else if $value == light {
+    color: $color-light-1;
+  }
+  @include media($tablet){
+    font-size: 14px;
+  }
+}
+@mixin font-h4($value: dark){
+  font-family: $font-family-bold;
+  font-size: 18px;
+  margin: #{$unit * 2} 0;
+  @if $value == dark {
+    color: $color-dark-1;
+  }
+  @else if $value == light {
+    color: $color-light-1;
+  }
+  @include media($tablet){
+    font-size: 16px;
+    margin: #{$unit * 1} 0;
+  }
+}
+@mixin font-h3($value: dark){
+  font-family: $font-family-bold;
+  font-size: 22px;
+  margin: #{$unit * 4} 0;
+  @if $value == dark {
+    color: $color-dark-1;
+  }
+  @else if $value == light {
+    color: $color-light-1;
+  }
+  @include media($tablet){
+    font-size: 20px;
+    margin: #{$unit * 2} 0;
+  }
+}
+@mixin font-h2($value: dark){
+  font-family: $font-family-bold;
+  font-size: 26px;
+  margin: #{$unit * 4} 0;
+  @if $value == dark {
+    color: $color-dark-1;
+  }
+  @else if $value == light {
+    color: $color-light-1;
+  }
+  @include media($tablet){
+    font-size: 24px;
+    margin: #{$unit * 2} 0;
+  }
+}
+@mixin font-h1($value: dark){
+  font-family: $font-family-black;
+  font-size: 32px;
+  margin: #{$unit * 6} 0;
+  @if $value == dark {
+    color: $color-dark-1;
+  }
+  @else if $value == light {
+    color: $color-light-1;
+  }
+  @include media($tablet){
+    font-size: 28px;
+    margin: #{$unit * 3} 0;
+  }
+}

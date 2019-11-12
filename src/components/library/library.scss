@@ -1,0 +1,15 @@
+@import '../../assets/scss/variable';
+@import '../../assets/scss/mixin';
+
+.library {
+  $this: '.library';
+
+  &__title{
+    padding-bottom: #{$unit * 2};
+    border-bottom: #{$unit * .2} solid $color-dark-1;
+  }
+  &__content{
+  }
+  &__item{
+  }
+}

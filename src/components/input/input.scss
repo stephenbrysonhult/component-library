@@ -1,0 +1,99 @@
+// imports
+@import '../../assets/scss/variable';
+@import '../../assets/scss/mixin';
+@import '../../assets/scss/typography';
+
+.input {
+  $this: '.input';
+  position: relative;
+
+  // Global, all inputs
+  &__field{
+    @include appearance(none);
+    width: 100%;
+    margin: 0;
+    padding: #{$unit * 1.5} #{$unit * 2};
+    background: $color-light-1;
+    border-radius: #{$unit * .5};
+    color: $color-dark-1;
+    border: #{$unit * .2} solid $color-black-05;
+    @include transition(.2s);
+
+    &--has-icon{
+      padding-right: 4.8rem;
+    }
+    &:focus, &:valid{
+      border-color: $color-dark-1;
+    }
+  }
+  &__icon{
+    position: absolute;
+    top: 50%;
+    right: #{$unit * 2};
+    @include transform-translate(0, -50%);
+  }
+
+  // Select
+  &--select{
+    #{$this}__field{
+      color: $color-black-60;
+
+      &:focus, &:valid{
+        color: $color-dark-1;
+      }
+    }
+  }
+
+  // Checkbox
+  &--checkbox{
+    @include flex;
+    @include flex-align-items(center);
+
+    #{$this}__field{
+      padding: 0;
+      width: #{$unit * 2.5};
+      height: #{$unit * 2.5};
+      order: 1;
+      position: relative;
+    }
+    #{$this}__label{
+      order: 2;
+      cursor: pointer;
+      font-family: $font-family-book;
+      margin-left: #{$unit};
+    }
+    #{$this}__icon{
+      @include transform-translate(-50%, -50%);
+      right: auto;
+      left: 50%;
+      opacity: 0;
+      pointer-events: none;
+      @include transition(.1s);
+    }
+    #{$this}__checkbox-input{
+      margin: 0;
+      opacity: 0;
+      width: 100%;
+      cursor: pointer;
+      height: 100%;
+
+      &:checked{
+        & + #{$this}__icon{
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  // Placeholders
+  ::placeholder {
+    color: $color-black-60;
+    opacity: 1;
+  }
+  :-ms-input-placeholder {
+    color: $color-black-60;
+  }
+  ::-ms-input-placeholder {
+    color: $color-black-60;
+  }
+}

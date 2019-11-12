@@ -885,22 +885,7 @@
     esutils "^2.0.2"
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
-
-"@bit/hult.careermapper.assets@^0.0.1":
-  version "0.0.1"
-  resolved "https://node.bit.dev/hult.careermapper.assets/-/hult.careermapper.assets-0.0.1.tgz#0b158c984093c6f98f1c71563e29855048ee9273"
-  integrity sha1-CxWMmECTxvmPHHFWPimFUEjuknM=
-  dependencies:
-    react "^16.11.0"
-
-"@bit/hult.careermapper.font-awesome@^0.0.2":
-  version "0.0.2"
-  resolved "https://node.bit.dev/hult.careermapper.font-awesome/-/hult.careermapper.font-awesome-0.0.2.tgz#c3c91881e4e3f4fcc047d0af5311e52a054a8812"
-  integrity sha1-w8kYgeTj9PzAR9CvUxHlKgVKiBI=
-  dependencies:
-    prop-types "15.7.2"
-    react "^16.11.0"
-
+    
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.3.tgz#099139eaec7ebf07a27c1786a3ff64f39464d2ef"

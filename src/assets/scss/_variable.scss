@@ -1,0 +1,27 @@
+// Global unit (spacing, widths, heights etc)
+$unit: 1rem;
+
+// Colors
+$color-primary: #2A29A4;
+$color-primary-alt: #85D0F1;
+$color-secondary: #FF5A5F;
+$color-light-1: #FFFFFF;
+$color-dark-1: #2B2B2B;
+$color-white-40: rgba(255,255,255,0.4);
+$color-white-60: rgba(255,255,255,0.6);
+$color-white-80: rgba(255,255,255,0.8);
+$color-black-05: rgba(0,0,0,0.05);
+$color-black-40: rgba(0,0,0,0.4);
+$color-black-60: rgba(0,0,0,0.6);
+$color-black-80: rgba(0,0,0,0.8);
+
+// Fonts
+$font-family-book: 'circular-book';
+$font-family-medium: 'circular-medium';
+$font-family-bold: 'circular-bold';
+$font-family-black: 'circular-black';
+
+// Devices
+$mobile: 414px;
+$tablet: 768px;
+$tablet-landscape: 1024px;

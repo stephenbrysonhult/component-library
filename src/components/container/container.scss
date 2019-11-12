@@ -1,0 +1,12 @@
+@import '../../assets/scss/variable';
+@import '../../assets/scss/mixin';
+
+.container {
+  $this: '.container';
+  margin: 0 auto;
+  max-width: $tablet-landscape;
+  padding: 0 #{$unit * 2};
+  @include media($mobile){
+    padding: 0 $unit;
+  }
+}

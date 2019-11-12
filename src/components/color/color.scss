@@ -1,0 +1,14 @@
+@import '../../assets/scss/variable';
+@import '../../assets/scss/mixin';
+
+.color {
+  $this: '.color';
+  background: $color-dark-1;
+  height: #{$unit };
+  width: 100%;
+  border-radius: #{$unit * .5};
+
+  &--border{
+    border: #{$unit * .2} solid $color-black-05;
+  }
+}

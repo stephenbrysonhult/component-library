@@ -1,0 +1,66 @@
+@import '../../assets/scss/typography';
+
+// Font
+span, .g--font-span, label{
+  @include font-span;
+}
+.g--font-span--light{
+  @include font-span(light);
+}
+button, b, .g--font-body-bold{
+  @include font-body-bold;
+}
+.g--font-body-bold--light{
+  @include font-body-bold(light);
+}
+p, .g--font-body, input, select, textarea{
+  @include font-body;
+}
+.g--font-body--light{
+  @include font-body(light);
+}
+h4, .g--font-h4{
+  @include font-h4;
+}
+.g--font-h4--light{
+  @include font-h4(light);
+}
+h3, .g--font-h3{
+  @include font-h3;
+}
+.g--font-h3--light{
+  @include font-h3(light);
+}
+h2, .g--font-h2{
+  @include font-h2;
+}
+.g--font-h2--light{
+  @include font-h2(light);
+}
+h1, .g--font-h1{
+  @include font-h1;
+}
+.g--font-h1--light{
+  @include font-h1(light);
+}
+
+// Margins and paddings
+.g--margin-none{
+  margin: 0;
+}
+
+// Spacers
+.g--spacer{
+  width: 100%;
+  height: #{$unit * 2};
+
+  &--small{
+    height: #{$unit};
+  }
+  &--large{
+    height: #{$unit * 4};
+  }
+  &--xlarge{
+    height: #{$unit * 8};
+  }
+}
