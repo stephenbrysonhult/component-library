@@ -5,8 +5,8 @@
   $this: '.library';
 
   &__title{
-    padding-bottom: #{$unit * 2};
-    border-bottom: #{$unit * .2} solid $color-dark-1;
+    padding-bottom: #{$unit};
+    border-bottom: #{$unit * .2} solid $color-light-1;
   }
   &__content{
   }

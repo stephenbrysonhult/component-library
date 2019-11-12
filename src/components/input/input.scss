@@ -13,17 +13,19 @@
     width: 100%;
     margin: 0;
     padding: #{$unit * 1.5} #{$unit * 2};
-    background: $color-light-1;
+    background: $color-white-90;
     border-radius: #{$unit * .5};
     color: $color-dark-1;
-    border: #{$unit * .2} solid $color-black-05;
+    border: 0;
+    box-shadow: 0 0 0 2pt $color-black-20;
     @include transition(.2s);
 
     &--has-icon{
       padding-right: 4.8rem;
     }
     &:focus, &:valid{
-      border-color: $color-dark-1;
+      background: $color-light-1;
+      box-shadow: 0 0 0 2pt $color-black-40;
     }
   }
   &__icon{

@@ -1,0 +1,16 @@
+@import '../../assets/scss/variable';
+
+.progress {
+  $this: '.progress';
+  background: $color-black-10;
+  height: #{$unit * .5};
+  width: 100%;
+  border-radius: #{$unit * .5};
+
+  &__indicator{
+    height: 100%;
+    width: 0;
+    border-radius: #{$unit * .5};
+    background: $color-secondary;
+  }
+}

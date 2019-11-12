@@ -1,4 +1,9 @@
 @import '../../assets/scss/typography';
+@import '../../assets/scss/variable';
+
+body{
+  background: $color-primary;
+}
 
 // Font
 span, .g--font-span, label{

@@ -1,0 +1,47 @@
+@import '../../assets/scss/variable';
+@import '../../assets/scss/mixin';
+
+.message {
+  $this: '.message';
+  @include flex;
+  @include flex-align-items(center);
+
+  &__avatar{
+    background: $color-black-10;
+    width: #{$unit * 3.6};
+    min-width: #{$unit * 3.6};
+    max-width: #{$unit * 3.6};
+    height: #{$unit * 3.6};
+    min-height: #{$unit * 3.6};
+    max-height: #{$unit * 3.6};
+    border-radius: #{$unit * 2.8};
+    color: $color-secondary;
+    font-size: 24px;
+    @include flex;
+    @include flex-align-items(center);
+    @include flex-justify-content(center);
+    @include media($tablet){
+      font-size: 20px;
+    }
+  }
+  &__content{
+    border-radius: #{$unit * .5};
+    background: $color-primary-alt;
+    padding: $unit;
+    margin-left: #{$unit * 1.5};
+    position: relative;
+
+    &:before{
+      content: '';
+      position: absolute;
+      left: -#{$unit * .5};
+      top: 50%;
+      @include transform-translate(0, -50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: #{$unit * .5} #{$unit * .5} #{$unit * .5} 0;
+      border-color: transparent $color-primary-alt transparent transparent;
+    }
+  }
+}

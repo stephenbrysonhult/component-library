@@ -9,4 +9,8 @@
   @include media($mobile){
     padding: 0 $unit;
   }
+
+  &--no-padding{
+    padding: 0;
+  }
 }

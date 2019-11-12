@@ -29,7 +29,7 @@ function styleClass({ type, isValid }) {
 const InputWrapper = props => (
   <div className={styleClass(props)}>
     {props.label && (
-      <label htmlFor={props.id} className="input__label">
+      <label htmlFor={props.id} className="g--font-span--light input__label">
         {props.label}
       </label>
     )}

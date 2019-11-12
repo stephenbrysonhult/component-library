@@ -28,6 +28,7 @@
 @mixin font-span($value: dark){
   font-family: $font-family-medium;
   font-size: 14px;
+  line-height: 1.4;
   @if $value == dark {
     color: $color-dark-1;
   }
@@ -41,6 +42,7 @@
 @mixin font-body($value: dark){
   font-family: $font-family-book;
   font-size: 16px;
+  line-height: 1.4;
   margin: #{$unit * 2} 0;
   @if $value == dark {
     color: $color-black-60;
@@ -56,6 +58,7 @@
 @mixin font-body-bold($value: dark){
   font-family: $font-family-bold;
   font-size: 16px;
+  line-height: 1.4;
   @if $value == dark {
     color: $color-dark-1;
   }
@@ -69,6 +72,7 @@
 @mixin font-h4($value: dark){
   font-family: $font-family-bold;
   font-size: 18px;
+  line-height: 1.6;
   margin: #{$unit * 2} 0;
   @if $value == dark {
     color: $color-dark-1;
@@ -84,6 +88,7 @@
 @mixin font-h3($value: dark){
   font-family: $font-family-bold;
   font-size: 22px;
+  line-height: 1.6;
   margin: #{$unit * 4} 0;
   @if $value == dark {
     color: $color-dark-1;
@@ -99,6 +104,7 @@
 @mixin font-h2($value: dark){
   font-family: $font-family-bold;
   font-size: 26px;
+  line-height: 1.6;
   margin: #{$unit * 4} 0;
   @if $value == dark {
     color: $color-dark-1;
@@ -114,6 +120,7 @@
 @mixin font-h1($value: dark){
   font-family: $font-family-black;
   font-size: 32px;
+  line-height: 1.8;
   margin: #{$unit * 6} 0;
   @if $value == dark {
     color: $color-dark-1;

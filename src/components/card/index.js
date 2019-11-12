@@ -9,7 +9,7 @@ const Library = ({ title, children }) => (
       <Container>
         <section className="library__section">
           <div className="library__info">
-            <h3 className="g--font-h3--light library__title">{title}</h3>
+            <h3 className="library__title">{title}</h3>
           </div>
           <div className="library__content">
             {children}

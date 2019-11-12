@@ -4,7 +4,7 @@
 .row{
   $this: '.row';
   @include flex;
-  @include flex-align-items(center);
+  @include flex-align-items(flex-start);
   @include flex-wrap(wrap);
 
   // Spacing
@@ -13,6 +13,10 @@
 
     #{$this}__column{
       padding: #{$unit * .5};
+
+      &--group{
+        padding: 0;
+      }
     }
   }
   &--gutters{
@@ -20,6 +24,10 @@
 
     #{$this}__column{
       padding: #{$unit};
+      
+      &--group{
+        padding: 0;
+      }
     }
   }
   &--gutters-large{
@@ -27,7 +35,19 @@
 
     #{$this}__column{
       padding: #{$unit * 2};
+
+      &--group{
+        padding: 0;
+      }
     }
+  }
+
+  // Positioning
+  &--space-between{
+    @include flex-justify-content(space-between);
+  }
+  &--flex-end{
+    @include flex-justify-content(flex-end);
   }
 
   // Columns
@@ -108,6 +128,43 @@
         }
         &-100{
           width: 100%;
+        }
+      }
+    }
+
+    // Group 
+    &--group{
+      padding: 0;
+      @include flex;
+      @include flex-wrap(wrap);
+    }
+
+    // Alignment
+    &--align-right{
+      @include flex;
+      @include flex-justify-content(flex-end);
+    }
+    @include media($tablet){
+      &--tablet{
+        &-align-right{
+          @include flex;
+          @include flex-justify-content(flex-end);
+        }
+        &-align-left{
+          @include flex;
+          @include flex-justify-content(flex-start);
+        }
+      }
+    }
+    @include media($mobile){
+      &--mobile{
+        &-align-right{
+          @include flex;
+          @include flex-justify-content(flex-end);
+        }
+        &-align-left{
+          @include flex;
+          @include flex-justify-content(flex-start);
         }
       }
     }
