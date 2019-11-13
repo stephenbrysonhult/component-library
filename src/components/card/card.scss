@@ -5,4 +5,5 @@
   $this: '.card';
   padding: #{$unit * 2};
   background: $color-light-1;
+  border-radius: #{$unit * .5};
 }

@@ -7,6 +7,7 @@ import Library from "./components/library";
 import Container from "./components/container";
 import "./assets/scss/style.scss";
 import Message from "./components/message";
+import CareerMatch from "./components/career-match";
 
 function App() {
   return (
@@ -289,7 +290,7 @@ transferable strengths for the future  🎨🤩"
             <p className="g--font-h4--light g--margin-none">Best match</p>
           </div>
           <div className="row__column row__column--66 row__column--tablet-100">
-            hey
+            <CareerMatch />
           </div>
         </div>
       </Library>

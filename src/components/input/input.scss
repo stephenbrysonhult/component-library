@@ -29,6 +29,7 @@
     }
   }
   &__icon{
+    color: $color-primary;
     position: absolute;
     top: 50%;
     right: #{$unit * 2};
